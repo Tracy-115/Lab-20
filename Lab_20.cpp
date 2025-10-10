@@ -1,8 +1,11 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 const int SIZE = 3;
+const int minim = 10000, maxim = 99999;
 
 class Chair {
 private:
@@ -12,7 +15,7 @@ public:
     // constructors
     Chair() {
         prices = new double[SIZE];
-        legs = 0;
+        legs = (rand() % 2) + 3;
         for (int i = 0; i < SIZE; i++)
             prices[i] = 0;
     }

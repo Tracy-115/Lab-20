@@ -52,7 +52,12 @@ public:
 };
 
 int main() {
+    srand(time(0));
     cout << fixed << setprecision(2);
+
+    cout << "Chair Object #1 (Default Constructor)" << endl;
+    Chair* chairPtr = new Chair; // default constructor
+    chairPtr->print();
 
     //creating pointer to first chair object
     Chair *chairPtr = new Chair;

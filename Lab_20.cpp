@@ -17,13 +17,13 @@ public:
         prices = new double[SIZE];
         legs = (rand() % 2) + 3;
         for (int i = 0; i < SIZE; i++)
-            prices[i] = 0;
+            prices[i] = (rand() % (MAX - MIN + 1) + MIN) / 100.0;
     }
     Chair(int l) {
         prices = new double[SIZE];
         legs = l;
         for (int i = 0; i < SIZE; i++)
-            prices[i] = 0;
+            prices[i] = arr[i];
     }
 
     // setters and getters
